@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Finger+Paint|Judson" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+<style>
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.navbar-alignit .navbar-header {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+
+.navbar-alignit .navbar-brand {
+  top: 50%;
+  display: block;
+  position: relative;
+  height: auto;
+  transform: translate(0,-50%);
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  z-index: 9999;
+}
+
+#black-div{
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+#black-div span{
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  color:grey;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  margin:30px;
+  line-height:25px;
+
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.example2 .navbar-brand>img {
+  padding: 7px 15px;
+  padding-left: 30px;
+}
+
+.mycontainer{
+  display:flex;
+}
+
+.own-top-container {
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#top-div1{
+  min-height: 75vh;
+  background-color: black;
+  background-image: url('meteo-72.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  background-size: cover;
+  background-position:left;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.own-container {
+  position: relative;
+  width: 50%;
+}
+
+@media screen and (max-width: 560px) {
+  .own-container{
+    width: 560px;
+  }
+}
+
+.image {
+  display: flex;
+  width:100%;
+  height: auto;
+}
+.sapce{
+  width: 100%;
+  height: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.own-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.footer {
+  background: black;
+  padding: 20px;
+}
+
+@media screen and (max-width: 560px) {
+  .footer{
+    width: 560px;
+  }
+}
+
+.footer a {
+  color: #70726F;
+  font-size: 15px;
+  padding: 10px;
+  transition: all .5s ease;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+a:link,a:visited{
+ text-decoration:none;
+ color:white;
+}
+a:hover{
+ text-decoration:none;
+}
+
+</style>
+</head>
+<body>
+<div class="re-container example2">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+      <div id="navbar2" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href='about.html'>About</a></li>
+          <li><a href='cv.html'>CV</a></li>
+          <li><a href='contact.html'>Contact</a></li>
+
+
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+<div id="top-div1" class="own-top-container">
+
+</div>
+
+<div id="black-div" class="container-fluid">
+  <p>
+  <span>
+  Météo Bordeaux est une application réelle . Elle propose le rapport quotidien du météo pour les habitants à Bordeaux . Par contre , selon le design , cette application ne nous donne pas de surprises .
+  </span>
+  <span>
+  Afin d'améliorer l'experience d'utilisateurs , nous créeons un nouvel design pour cette application . Nous utilisons la couleur dégradée et la typographie sans sérif pour moderniser sa caractéristique . En plus , simplifier le contenu est aussi un decide important en terme de l'utilisation .
+  </span>
+  </p>
+</div>
+<div class="own-top-container">
+  <div class="own-container">
+    <img src="recherche-01.jpg" alt="Avatar" class="image">
+  </div>
+  <div class="own-container">
+    <img src="recherche-02.jpg" alt="Avatar" class="image">
+  </div>
+  <div class="own-container">
+    <img src="recherche-03.jpg" alt="Avatar" class="image">
+  </div>
+
+  <div class="own-container">
+    <img src="recherche-04.jpg" alt="Avatar" class="image">
+  </div>
+  <div class="own-container">
+    <img src="recherche-05.jpg" alt="Avatar" class="image">
+  </div>
+  <div class="own-container">
+    <img src="recherche-06.jpg" alt="Avatar" class="image">
+  </div>
+
+<div class="own-container">
+  <img src="meteo-01.jpg" alt="Avatar" class="image">
+</div>
+
+<div class="own-container">
+  <img src="meteo-02.jpg" alt="Avatar" class="image">
+</div>
+
+<div class="own-container">
+  <img src="meteo-00.jpg" alt="Avatar" class="image">
+</div>
+
+
+<div class="own-container">
+  <img src="meteo-03.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-04.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-05.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-06.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-07.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-09.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-10.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-11.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-12.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-13.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-14.jpg" alt="Avatar" class="image">
+</div>
+<div class="own-container">
+  <img src="meteo-15.jpg" alt="Avatar" class="image">
+</div>
+
+<div class="own-container">
+  <img src="meteo-72.jpg" alt="Avatar" class="image">
+</div>
+
+
+
+
+
+</div>
+
+<footer class="footer">
+
+  <div class="mycontainer">
+
+  <div class="container text-left">
+    <a href="#">Dong Xinyi@2019 Return to the top</a>
+  </div>
+  <div class="container text-right">
+    <a href="https://www.facebook.com/profile.php?id=100013821576135"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/dongxinyi2016"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/xinyi-dong-455446155/"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-wechat"></i></a>
+    <a href="#"><i class="fa fa-skype"></i></a>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
