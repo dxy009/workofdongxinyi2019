@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Finger+Paint|Judson" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+<style>
+.navbar-brand {
+  height: 80px;
+  top: 0px;
+  padding: 10px;
+}
+
+.navbar-brand>img {
+  height: 150%;
+  padding: 0px;
+  width: auto;
+}
+
+.navbar-alignit .navbar-header {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 20px;
+}
+
+.navbar-alignit .navbar-brand {
+  top: 50%;
+  display: block;
+  position: relative;
+  height: auto;
+  transform: translate(0,-50%);
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  z-index: 9999;
+}
+
+#black-div{
+  min-height: 30vh;
+  display: flex;
+  align-items:flex-start;
+  flex-wrap: wrap;
+  background-color: #ff7761;
+}
+
+#black-div span{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Finger Paint', cursive;
+  font-family: 'Judson', serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: justify;
+  justify-content: space-around;
+  text-justify:newspaper;
+  word-break:normal;
+  line-height:35px;
+  width:2000px;
+}
+
+
+
+#black-div p:first-child::first-letter{
+  float:left;
+  font-size:50px;
+}
+
+
+
+container-fluid{
+  color: white;
+  font-family: "Roboto";
+  display: flex;
+  align-items: flex-start;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.example2 .navbar-brand>img {
+  padding: 7px 15px;
+  padding-left: 30px;
+}
+
+.mycontainer {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.own-top-container {
+  display:flex;
+  flex-wrap:wrap;
+  align-content: space-between;
+}
+
+#top-div1{
+  min-height: 95vh;
+  background-color: black;
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  background-position:left;
+  background-size: 1920px;
+  background-position:center;
+  background-attachment:fixed;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+}
+
+.own-container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  display: flex;
+  padding: 10px
+
+}
+
+@media screen and (max-width: 560px) {
+  .own-container{
+    width: 560px;
+  }
+}
+
+.own-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: grey;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text a:hover {
+  color: white;
+}
+
+.footer {
+  background: black;
+  padding: 20px;
+}
+
+.footer a {
+  color: #70726F;
+  font-size: 15px;
+  padding: 10px;
+  transition: all .5s ease;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+a:link,a:visited {
+ text-decoration:none;
+ color: white;
+}
+
+a:hover{
+ text-decoration:none;
+}
+
+p{
+  font-size: 20px;
+  color:#fff;
+  padding: 5px;
+  margin: 5px;
+  align-self: flex-start;
+
+}
+
+h1{
+  font-size:50px;
+  font-family: 'Finger Paint', cursive;
+  font-family: 'Judson', serif;
+  color:#ff7761;
+
+}
+h2{
+  font-size:35px;
+  font-family: 'Finger Paint', cursive;
+  font-family: 'Judson', serif;
+  color:white;
+}
+
+</style>
+</head>
+
+<body>
+<div class="re-container example2">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+
+
+
+      </div>
+      <div id="navbar2" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href='about.html'>About</a></li>
+          <li><a href='cv.html'>CV</a></li>
+          <li><a href='contact.html'>Contact</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="top-div1" class="own-top-container">
+    <h1>
+      Bonjour !
+    </h1>
+
+    <h2>
+    Je suis Xinyi DONG .
+  </h2>
+
+  <h2>
+  Graphiste et UI/UX Designer .
+</h2>
+
+  </div>
+
+  <div id="black-div" class="container-fluid">
+
+      <span>
+    <p>
+      7 ans d'études sur le design graphique en Chine, un échange de deux mois dans le domaine de cinéma et théâtre à Taiwan, un an de master professionel de métier de la culture à IESA Paris et deux ans de design interactif à ECV Bordeaux, c'est un long parcours pedagogique d'une fille chinoise. </p>
+    </p>
+    <p>
+     Bonjour à tous! Moi, je m'appelle Xinyi DONG, étudiante à Bordeaux et bientôt commencerais la nouvelle aventure à Paris. Je suis à la recherche d'un travail en terme de UI Design et Web Design à partir de juillet 2019. Je suis passionnée, motivée et toujours à l'ecoute. Travailler dans une équipe creative et dynamique serait mon souhait de debuter ma carrière. Afin de connaître mes réalisations et mes styles, vous pouvez voir le portefolio au dessous. N'hésitez pas à me contacter par e-mail pour échanger et proposer des collaborations. À très bientôt!</p>
+   </p>
+  </span>
+  </div>
+
+
+<div class="own-top-container">
+<div class="own-container">
+  <img src="season-72.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work season.html'>Saison Musicale/Packaging</a>
+  </div>
+</div>
+
+<div class="own-container">
+  <img src="wish-72.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work wish.html'>Wish par LE CHAT/Identite Visuelle</a>
+  </div>
+</div>
+
+<div class="own-container">
+  <img src="meteo-72.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work meteo.html'>Météo Bordeaux/UX Design</a>
+  </div>
+</div>
+
+<div class="own-container">
+  <img src="deep-72.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work deep.html'>DEEP/Design de Jeux</a>
+  </div>
+</div>
+
+<div class="own-container">
+  <img src="yoyo-00.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work yoyo.html'>YOYO/UX Design</a>
+  </div>
+</div>
+
+<div class="own-container">
+  <img src="kipkamp layout-01.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work kipkamp.html'>KIPKAMP/UX Design</a>
+  </div>
+</div>
+
+
+
+<div class="own-container">
+  <img src="dia-72.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work dia.html'>DIA Restos a Chartrons/Web Design</a>
+  </div>
+</div>
+
+<div class="own-container">
+  <img src="dimoitou-01.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work dimoitou.html'>Dimoitou/UI Design</a>
+  </div>
+</div>
+
+<div class="own-container">
+  <img src="zinger-72.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work produit.html'>Collection de Packagings</a>
+  </div>
+</div>
+
+<div class="own-container">
+  <img src="oenofolie--00.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work logo.html'>Collection de logos</a>
+  </div>
+</div>
+
+<div class="own-container">
+  <img src="snippets-01.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <a class="text" href='work snippets.html'>Snippets/Patternlab</a>
+  </div>
+</div>
+
+  <div class="own-container">
+    <img src="nuit-blanche-72.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <a class="text" href='https://celinemerouzeau1.wixsite.com/monsite'>Nuit Blanche a Strasbourg/Evènement</a>
+    </div>
+</div>
+
+</div>
+
+
+<footer class="footer">
+
+  <div class="mycontainer">
+
+  <div class="container text-left">
+    <a href="#">Dong Xinyi@2019 Return to the top</a>
+  </div>
+  <div class="container text-right">
+
+    <a href="https://www.facebook.com/profile.php?id=100013821576135"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/dongxinyi2016"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/xinyi-dong-455446155/"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-wechat"></i></a>
+    <a href="#"><i class="fa fa-skype"></i></a>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
