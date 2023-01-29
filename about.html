@@ -1,215 +1,245 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Finger+Paint|Judson" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Judson" rel="stylesheet">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-
-
-<style>
-.navbar-brand {
-  padding: 0px;
-}
-
-.navbar-brand>img {
-  height: 100%;
-  padding: 15px;
-  width: auto;
-}
-
-.navbar-alignit .navbar-header {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  height: 50px;
-}
-
-.navbar-alignit .navbar-brand {
-  top: 50%;
-  display: block;
-  position: relative;
-  height: auto;
-  transform: translate(0,-50%);
-  margin-right: 15px;
-  margin-left: 15px;
-}
-
-.navbar-nav>li>.dropdown-menu {
-  z-index: 9999;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.example2 .navbar-brand>img {
-  padding: 7px 15px;
-  padding-left: 30px;
-}
-
-.mycontainer{
-  display:flex;
-}
-
-.sapce{
-  width: 100%;
-  height: 50px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
-}
-
-p{
-  font-family: 'Finger Paint', cursive;
-  font-family: 'Judson', serif;
-  font-size: 21px;
-  margin:50px;
-  margin-left: 150px;
-  margin-right: 150px;
-  word-break:normal;
-  line-height:35px;
-  letter-spacing:1.2px;
-}
-
-p::first-letter{
-  color:#ff7761;
-  float:left;
-  font-size:38px;
-}
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
+  <style>
+    .navbar-brand {
+      padding: 0px;
+    }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
+    .navbar-brand>img {
+      height: 100%;
+      padding: 15px;
+      width: auto;
+    }
 
-.footer {
-  background: black;
-  padding: 20px;
-}
+    .navbar-alignit .navbar-header {
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      height: 50px;
+    }
 
-.footer a {
-  color: #70726F;
-  font-size: 15px;
-  padding: 10px;
-  transition: all .5s ease;
-}
+    .navbar-alignit .navbar-brand {
+      top: 50%;
+      display: block;
+      position: relative;
+      height: auto;
+      transform: translate(0, -50%);
+      margin-right: 15px;
+      margin-left: 15px;
+    }
 
-.footer a:hover {
-  color: white;
-}
+    .navbar-nav>li>.dropdown-menu {
+      z-index: 9999;
+    }
 
-a:link,a:visited{
- text-decoration:none;
- color:white;
-}
-a:hover{
- text-decoration:none;
-}
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
 
-</style>
+    .example2 .navbar-brand>img {
+      padding: 7px 15px;
+      padding-left: 30px;
+    }
+
+    .mycontainer {
+      display: flex;
+    }
+
+    .sapce {
+      width: 100%;
+      height: 50px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: black;
+    }
+
+    p {
+      font-family: 'Finger Paint', cursive;
+      font-family: 'Judson', serif;
+      font-size: 21px;
+      margin: 50px;
+      margin-left: 150px;
+      margin-right: 150px;
+      word-break: normal;
+      line-height: 35px;
+      letter-spacing: 1.2px;
+    }
+
+    p::first-letter {
+      color: #ff7761;
+      float: left;
+      font-size: 38px;
+    }
+
+
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .footer {
+      background: black;
+      padding: 20px;
+    }
+
+    .footer a {
+      color: #70726F;
+      font-size: 15px;
+      padding: 10px;
+      transition: all .5s ease;
+    }
+
+    .footer a:hover {
+      color: white;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    @media (max-width: 660px) {
+      .own-container p {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="re-container example2">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+  <div class="re-container example2">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+        <div id="navbar2" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+        </div>
 
       </div>
-      <div id="navbar2" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="contact.html">Contact</a></li>
+
+    </nav>
 
 
-      </div>
+
+    <div id="top-div1" class="own-top-container">
 
     </div>
 
-  </nav>
+    <div id="black-div" class="container-fluid">
+      <p>
+        <span>
+
+      </p>
+    </div>
+
+    <div class="own-top-container">
+      <div class="own-container">
+        <p>Bonjour Madame / Monsieur ,</p>
+        <p>
+          Diplômée de l’école ECV Bordeaux en Master de Design Interactif , j’avais suivi mes études de design de 7
+          ans en Chine . Un an d’étude de Master Professionnel sur le métier de la culture à l’école IESA à Paris .
+          À l’école ECV , j’ai enrichi mes connaissances que j’avais manqué et en plus j’ai eu pas des occasions de
+          connaître des techniques dans le domaine UX Design et Web Design . Des projets divers me permettent de
+          pratiquer mes compétences sur des logiciels comme Sketch, Adobe XD , Figma , Adobe Illustrator , Adobe
+          Photoshop , etc . En même temps , j’ai utilisé HTML et CSS pour coder des pages selon les besoins . Pour un
+          projet collectif de l’école ‘ Snippets ’ , j’ai créé un site sur 16 articles de CSS ( Je me suis occupée
+          du thème 03 Flexbox ) en utilisant le Pattern Lab . Nous avons appris comment créer les atoms , les
+          molecules , les organismes , les templates et les pages dans le logiciel Atom pour réaliser le design.
+          En 2017 , j’étais une graphiste à l’agence Press4Kids . J’ai fait des maquettes pour les applications
+          Dimoutou et Les Progres des Enfants . Ces deux applications sont créées surtout pour les enfants qui leur
+          permettent de savoir des nouvelles journalières d’une manière graphique et ludique . Et puis , j’ai
+          travaillé à l’agence Adhoc Design à Paris de 3 mois en 2018 . J’ai fait des logos, des packagings , des
+          publications , des plaquettes et des réalisations de 3D pour des marques bien connues en France . Du concept
+          à la réalisation , j’ai travaillé individuellement et finalement trois de mes propositions ont été
+          sélectionnées par les clients .</p>
+        <p> Depuis 2019, j'ai commence a travailler a Finastra pour faire le design system et les projets centric au
+          sein de l'entreprise. Je suis actuellement un Senior UX/UI Designer.
+
+        <p> Je suis passionnée , motivée , créative et toujours à l’écoute . Je suis à la recherche d’un travail
+          sur le UX/UI Design et le Web/Mobile Design . J’aimerais mettre mon enthousiasme et mon efficacité au service
+          de votre équipe . Je vous remercie de l’attention que vous porterez à ma candidature et me tiens à votre
+          disposition pour un entretien .
+          Dans l’attente de votre réponse , je vous prie d’agréer , Madame , Monsieur , l’expression de mes
+          respectueuses salutations .
+        </p>
+      </div>
 
 
 
-<div id="top-div1" class="own-top-container">
+    </div>
 
-</div>
+    <footer class="footer">
 
-<div id="black-div" class="container-fluid">
-  <p>
-  <span>
+      <div class="mycontainer">
 
-  </p>
-</div>
-
-<div class="own-top-container">
-<div class="own-container">
-  <p>Bonjour Madame / Monsieur ,</p>
-<p>
-Diplômée de l’école ECV Bordeaux en Master de Design Interactif , j’avais suivi mes études de design de 7 ans en Chine . Un an d’étude de Master Professionnel sur le métier de la culture à l’école IESA à Paris . À l’école ECV , j’ai enrichi mes connaissances que j’avais manqué et en plus j’ai eu pas des occasions de connaître des techniques dans le domaine UX Design et Web Design . Des projets divers me permettent de pratiquer mes compétences sur des logiciels comme Sketch, Adobe XD , Figma , Adobe Illustrator , Adobe Photoshop , etc . En même temps , j’ai utilisé HTML et CSS pour coder des pages selon les besoins . Pour un projet collectif de l’école ‘ Snippets ’ , j’ai créé un site sur 16 articles de CSS ( Je me suis occupée du thème 03 Flexbox ) en utilisant le Pattern Lab . Nous avons appris comment créer les atoms , les molecules , les organismes , les templates et les pages dans le logiciel Atom pour réaliser le design.
-En 2017 , j’étais une graphiste à l’agence Press4Kids . J’ai fait des maquettes pour les applications Dimoutou et Les Progres des Enfants . Ces deux applications sont créées surtout pour les enfants qui leur permettent de savoir des nouvelles journalières d’une manière graphique et ludique . Et puis , j’ai travaillé à l’agence Adhoc Design à Paris de 3 mois en 2018 . J’ai fait des logos, des packagings , des publications , des plaquettes et des réalisations de 3D pour des marques bien connues en France . Du concept à la réalisation , j’ai travaillé individuellement et finalement trois de mes propositions ont été sélectionnées par les clients .</p>
-<p> Depuis 2019, j'ai commence a travailler a Finastra pour faire le design system et les projets centric au sein de l'entreprise. Je suis actuellement un Senior UX/UI Designer.
-
-<p>  Je suis passionnée , motivée , créative et toujours à l’écoute . Je suis à la recherche d’un travail sur le UX/UI Design et le Web/Mobile Design . J’aimerais mettre mon enthousiasme et mon efficacité au service de votre équipe . Je vous remercie de l’attention que vous porterez à ma candidature et me tiens à votre disposition pour un entretien .
-Dans l’attente de votre réponse , je vous prie d’agréer , Madame , Monsieur , l’expression de mes respectueuses salutations .
-</p>
-</div>
-
-
-
-</div>
-
-<footer class="footer">
-
-  <div class="mycontainer">
-
-  <div class="container text-left">
-    <a href="#">Dong Xinyi@2022 Return to the top</a>
-  </div>
-  <div class="container text-right">
-    <a href="https://www.facebook.com/profile.php?id=100013821576135"><i class="fa fa-facebook"></i></a>
-    <a href="https://twitter.com/dongxinyi2016"><i class="fa fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/xinyi-dong-455446155/"><i class="fa fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-wechat"></i></a>
-    <a href="#"><i class="fa fa-skype"></i></a>
-  </div>
-</div>
-</footer>
+        <div class="container text-left">
+          <a href="#">Dong Xinyi@2022 Return to the top</a>
+        </div>
+        <div class="container text-right">
+          <a href="https://www.facebook.com/profile.php?id=100013821576135"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/dongxinyi2016"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/xinyi-dong-455446155/"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-wechat"></i></a>
+          <a href="#"><i class="fa fa-skype"></i></a>
+        </div>
+      </div>
+    </footer>
 
 </body>
+
 </html>
