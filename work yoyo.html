@@ -50,15 +50,15 @@
       z-index: 9999;
     }
 
-    #black-div {
+    /* #black-div {
       min-height: 25vh;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       background-color: black;
-    }
+    } */
 
-    #black-div span {
+    /* #black-div span {
       padding-left: 50px;
       padding-right: 50px;
       display: flex;
@@ -75,9 +75,9 @@
       color: white;
       display: flex;
       align-items: center;
-    }
+    } */
 
-    body {
+    /* body {
       font-family: 'Roboto', sans-serif;
     }
 
@@ -94,9 +94,9 @@
       margin-top: 0px;
       display: flex;
       flex-wrap: wrap;
-    }
+    } */
 
-    #top-div1 {
+    /* #top-div1 {
       min-height: 50vh;
       background-color: black;
       background-image: url('yoyo-06.png');
@@ -109,11 +109,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
+    } */
 
     .own-container {
-      position: relative;
-      width: 50%;
+      margin-top: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      display: flex;
+      place-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #080201;
+      /* width: 80%; */
+    }
+
+    .video iframe {
+      width: 80%;
+      height: 80%;
+      min-width: 600px;
+      min-height: 880px;
+    }
+
+    .video-element {
+      width: 68%;
     }
 
     @media screen and (max-width: 560px) {
@@ -128,7 +146,7 @@
 
     .image {
       display: flex;
-      width: 100%;
+      width: 80%;
       height: auto;
     }
 
@@ -232,7 +250,7 @@
 
     </div>
 
-    <div id="black-div" class="container-fluid">
+    <!-- <div id="black-div" class="container-fluid">
       <p>
         <span>
           YOYO est une application créative qui est réalisée par 4 filles au début de l'année 2019 . Cette application
@@ -243,14 +261,14 @@
           Cette adresse vous permet de savoir le parcours d'utilisateur : http://invis.io/Q5Q1VI56D8X
         </span>
       </p>
-    </div>
+    </div> -->
 
     <div class="own-top-container">
 
       <div class="own-container">
-        <img src="yoyo-01.png" alt="Avatar" class="image">
+        <img src="./new/yoyo/yoyo.png" alt="Avatar" class="image">
       </div>
-      <div class="own-container">
+      <!-- <div class="own-container">
         <img src="yoyo-02.png" alt="Avatar" class="image">
       </div>
       <div class="own-container">
@@ -270,16 +288,16 @@
       </div>
       <div class="own-container">
         <img src="yoyo-11.jpg" alt="Avatar" class="image">
-      </div>
+      </div> -->
 
-      <div class="own-container">
-        <video width="700" height="525" controls="controls">
+      <div class="own-container video">
+        <video class="video-element " controls="controls">
           <source src="yoyo-01.mov" type="video/mp4" />
       </div>
 
-      <div class="own-container">
-        <video width="700" height="525" controls="controls">
-          <source src="yoyo-02.mov" type="video/mp4" />
+      <div class="own-container video">
+        <video class="video-element " controls="controls">
+          <source src="new/yoyo/yoyo-02.mov" type="video/mp4" />
       </div>
 
     </div>
