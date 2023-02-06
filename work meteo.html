@@ -114,8 +114,12 @@
     }
 
     @media screen and (max-width: 560px) {
-      .own-container {
-        width: 560px;
+      #top-div1 {
+        display: none;
+      }
+
+      #black-div {
+        padding-top: 50px;
       }
     }
 
@@ -164,12 +168,20 @@
     }
 
     @media screen and (max-width: 560px) {
-      .footer {
-        width: 560px;
+      #top-div1 {
+        display: none;
       }
 
-      #top-div-illustation {
-        display: none;
+      #black-div {
+        padding-top: 50px;
+      }
+
+      .own-top-container {
+        flex-direction: column;
+      }
+
+      .own-container {
+        width: 100%;
       }
     }
 

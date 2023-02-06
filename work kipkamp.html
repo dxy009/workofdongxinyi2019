@@ -112,12 +112,15 @@
       width: 50%;
     }
 
-    @media screen and (max-width: 560px) {
-      .own-container {
-        width: 560px;
-      }
+    .own-container video {
+      width: 50%;
     }
 
+    @media screen and (max-width: 560px) {}
+
+    .own-container video {
+      width: 100%;
+    }
 
     .image {
       display: flex;
@@ -159,18 +162,33 @@
     }
 
     .footer {
+      width: 100%;
       background: black;
       padding: 20px;
     }
 
     @media screen and (max-width: 560px) {
-      .footer {
-        width: 560px;
-      }
-
-      #top-div-illustation {
+      #top-div1 {
         display: none;
       }
+
+      #black-div {
+        padding-top: 50px;
+      }
+
+      .own-top-container {
+        flex-direction: column;
+        place-content: center;
+      }
+
+      .own-container {
+        width: 100%;
+      }
+
+    }
+
+    .footer .container {
+      width: 100% !important;
     }
 
     .footer a {
@@ -290,7 +308,7 @@
 
 
       <div class="own-container">
-        <video width="700" height="525" controls="controls">
+        <video controls="controls">
           <source src="animation du logo kipkamp final.mp4" type="video/mp4" />
       </div>
 

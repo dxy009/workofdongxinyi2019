@@ -113,9 +113,7 @@
     }
 
     @media screen and (max-width: 560px) {
-      .own-container {
-        width: 560px;
-      }
+
 
       #top-div-illustation {
         display: none;
@@ -166,10 +164,23 @@
       padding: 20px;
     }
 
+    video {
+      width: 100%;
+    }
+
     @media screen and (max-width: 560px) {
-      .footer {
-        width: 560px;
+      #top-div1 {
+        display: none;
       }
+
+      .own-top-container {
+        flex-direction: column;
+      }
+
+      .own-container {
+        width: 100%;
+      }
+
     }
 
     .footer a {
@@ -290,7 +301,7 @@
       </div>
 
       <div class="own-container">
-        <video width="700" height="525" controls="controls">
+        <video controls="controls">
           <source src="deep.mov" type="video/mp4" />
       </div>
 
