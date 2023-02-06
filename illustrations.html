@@ -113,13 +113,24 @@
         }
 
         @media screen and (max-width: 560px) {
-            .own-container {
-                width: 560px;
-            }
 
             #top-div-illustation {
                 display: none;
             }
+
+            #black-div {
+                padding-top: 50px;
+            }
+
+            .own-top-container {
+                flex-direction: column;
+                place-content: center;
+            }
+
+            .own-container {
+                width: 100%;
+            }
+
         }
 
         .image {
@@ -168,11 +179,7 @@
         }
 
 
-        @media screen and (max-width: 560px) {
-            .footer {
-                width: 560px;
-            }
-        }
+        @media screen and (max-width: 560px) {}
 
         .footer a {
             color: #70726F;
