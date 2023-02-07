@@ -81,12 +81,24 @@ body {
 }
 .own-container{
   display:flex;
+  flex-direction: row;
+  width: 50%;
   justify-content: center;
   box-shadow:black;
 }
-.img{
-  flex-grow: 1;
-  flex-basis:auto;
+
+img{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.own-top-container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 
@@ -124,6 +136,17 @@ a:link,a:visited{
 a:hover{
  text-decoration:none;
 }
+
+@media screen and (max-width: 560px) {
+      .own-top-container {
+        flex-direction: column;
+      }
+
+      .own-container {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
 
 </style>
 </head>
@@ -169,9 +192,14 @@ a:hover{
 </div>
 
 <div class="own-top-container">
+
 <div class="own-container">
-  <img src="./new/cv-2023.png" alt="Avatar" class="image">
+  <img src="./cv_in_english.png" alt="Avatar" class="image">
 </div>
+<div class="own-container">
+  <img src="./cv_in_french.png" alt="Avatar" class="image">
+</div>
+
 </div>
 
 <footer class="footer">
